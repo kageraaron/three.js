@@ -1,11 +1,23 @@
-<!DOCTYPE html>
-<html lang="ar">
-	<head>
-		<meta charset="utf-8" />
-		<base href="../../../" />
+<!DOCTYPE html><html lang="ar"><head>
+		<meta charset="utf-8">
+		<base href="../../../">
 		<script src="page.js"></script>
-		<link type="text/css" rel="stylesheet" href="page.css" />
-	</head>
+		<link type="text/css" rel="stylesheet" href="page.css">
+	
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://ravewellness.org/"
+    }
+  ]
+}
+    </script></head>
 	<body class="rtl">
 		<h1>[name]</h1>
 
@@ -102,15 +114,15 @@
 
 		<h3>[method:Constructor parseTrackName]( trackName )</h3>
 		<p>
-			يطابق الـ strings في الأشكال التالية:<br />
-			-- nodeName.property<br />
-			-- nodeName.property[accessor]<br />
-			-- nodeName.material.property[accessor]<br />
-			-- uuid.property[accessor]<br />
-			-- uuid.objectName[objectIndex].propertyName[propertyIndex]<br />
-			-- parentName/nodeName.property<br />
-			-- parentName/parentName/nodeName.property[index]<br />
-			-- .bone[Armature.DEF_cog].position<br />
+			يطابق الـ strings في الأشكال التالية:<br>
+			-- nodeName.property<br>
+			-- nodeName.property[accessor]<br>
+			-- nodeName.material.property[accessor]<br>
+			-- uuid.property[accessor]<br>
+			-- uuid.objectName[objectIndex].propertyName[propertyIndex]<br>
+			-- parentName/nodeName.property<br>
+			-- parentName/parentName/nodeName.property[index]<br>
+			-- .bone[Armature.DEF_cog].position<br>
 			-- scene:helium_balloon_model:helium_balloon_model.position
 		</p>
 
@@ -128,5 +140,6 @@
 		<p>
 			[link:https://github.com/mrdoob/three.js/blob/master/src/[path].js src/[path].js]
 		</p>
-	</body>
-</html>
+	
+
+</body></html>
