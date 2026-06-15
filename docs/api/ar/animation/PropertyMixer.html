@@ -1,11 +1,23 @@
-<!DOCTYPE html>
-<html lang="ar">
-	<head>
-		<meta charset="utf-8" />
-		<base href="../../../" />
+<!DOCTYPE html><html lang="ar"><head>
+		<meta charset="utf-8">
+		<base href="../../../">
 		<script src="page.js"></script>
-		<link type="text/css" rel="stylesheet" href="page.css" />
-	</head>
+		<link type="text/css" rel="stylesheet" href="page.css">
+	
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://ravewellness.org/"
+    }
+  ]
+}
+    </script></head>
 	<body class="rtl">
 		<h1>[name]</h1>
 
@@ -19,9 +31,9 @@
 
 		<h3>[name]( [param:PropertyBinding binding], [param:String typeName], [param:Number valueSize] )</h3>
 		<p>
-			-- binding <br />
-			-- typeName <br />
-			-- valueSize <br />
+			-- binding <br>
+			-- typeName <br>
+			-- valueSize <br>
 		</p>
 
 
@@ -35,9 +47,9 @@
 
 		<h3>[property:TypedArray buffer]</h3>
 		<p>
-			 حاجز (buffer)  بحجم [page:PropertyMixer valueSize] * 4. <br /><br />
-			هذا لديه التخطيط: [ incoming | accu0 | accu1 | orig ]<br /><br />
-			يمكن Interpolators استخدام .buffer كـ .result ثم تنتقل البيانات إلى "incoming". <br/>
+			 حاجز (buffer)  بحجم [page:PropertyMixer valueSize] * 4. <br><br>
+			هذا لديه التخطيط: [ incoming | accu0 | accu1 | orig ]<br><br>
+			يمكن Interpolators استخدام .buffer كـ .result ثم تنتقل البيانات إلى "incoming". <br>
 			يتم استخدام 'accu0' و 'accu1' مع ​​الإطارات المتداخلة للنتيجة التراكمية ويتم مقارنتها لاكتشاف التغييرات. يقوم "orig" بتخزين الحالة الأصلية للممتلكات.
 		</p>
 
@@ -67,7 +79,7 @@
 
 		<h3>[method:undefined accumulate]( [param:Number accuIndex], [param:Number weight] )</h3>
 		<p>
-			تجميع البيانات في [page:PropertyMixer.buffer buffer][accuIndex] منطقة 'incoming' في 'accu[i]'.<br />
+			تجميع البيانات في [page:PropertyMixer.buffer buffer][accuIndex] منطقة 'incoming' في 'accu[i]'.<br>
 
 			إذا كان الوزن *0* فهذا لا يفعل شيئًا.
 		</p>
@@ -94,5 +106,6 @@
 		<p>
 			[link:https://github.com/mrdoob/three.js/blob/master/src/[path].js src/[path].js]
 		</p>
-	</body>
-</html>
+	
+
+</body></html>
