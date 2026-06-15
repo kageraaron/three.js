@@ -1,13 +1,25 @@
-<!DOCTYPE html>
-<html lang="ar">
-	<head>
-		<meta charset="utf-8" />
-		<base href="../../../" />
+<!DOCTYPE html><html lang="ar"><head>
+		<meta charset="utf-8">
+		<base href="../../../">
 		<script src="page.js"></script>
-		<link type="text/css" rel="stylesheet" href="page.css" />
-	</head>
+		<link type="text/css" rel="stylesheet" href="page.css">
+	
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://ravewellness.org/"
+    }
+  ]
+}
+    </script></head>
 	<body class="rtl">
-		[page:Object3D] &rarr;
+		[page:Object3D] →
 
 		<h1>[name]</h1>
 
@@ -36,7 +48,7 @@
 
 		<h3>[property:Layers layers]</h3>
 		<p>
-		ال [page:Layers layers] التي تعد الكاميرا عضو فيها. هذه ملكية موروثة من [page:Object3D].<br /><br />
+		ال [page:Layers layers] التي تعد الكاميرا عضو فيها. هذه ملكية موروثة من [page:Object3D].<br><br>
 
 		يجب أن تشترك الكائنات في طبقة واحدة على الأقل مع الكاميرا لتظهر عند عرض وجهة نظر الكاميرا.
 		</p>
@@ -68,10 +80,10 @@
 
 		<h3>[method:Vector3 getWorldDirection]( [param:Vector3 target] )</h3>
 		<p>
-		[page:Vector3 target] — سيتم نسخ النتيجة في الـ*Vector3* الحالي. <br /><br />
+		[page:Vector3 target] — سيتم نسخ النتيجة في الـ*Vector3* الحالي. <br><br>
 
 		ترجع [page:Vector3] التي تمثل اتجاه الفضاء العالمي الذي تنظر فيه الكاميرا.
-		(ملاحظة: تنظر الكاميرا إلى محورها z المحلي والسالب).<br /><br />
+		(ملاحظة: تنظر الكاميرا إلى محورها z المحلي والسالب).<br><br>
 		</p>
 
 		<h2>المصدر (Source)</h2>
@@ -79,5 +91,6 @@
 		<p>
 			[link:https://github.com/mrdoob/three.js/blob/master/src/[path].js src/[path].js]
 		</p>
-	</body>
-</html>
+	
+
+</body></html>
