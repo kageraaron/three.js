@@ -1,11 +1,23 @@
-<!DOCTYPE html>
-<html lang="ar">
-	<head>
-		<meta charset="utf-8" />
-		<base href="../../../" />
+<!DOCTYPE html><html lang="ar"><head>
+		<meta charset="utf-8">
+		<base href="../../../">
 		<script src="page.js"></script>
-		<link type="text/css" rel="stylesheet" href="page.css" />
-	</head>
+		<link type="text/css" rel="stylesheet" href="page.css">
+	
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://ravewellness.org/"
+    }
+  ]
+}
+    </script></head>
 	<body class="rtl">
 
 		<h1>[name]</h1>
@@ -62,11 +74,11 @@
 
 		<h3>[name]( [param:String name], [param:Array times], [param:Array values], [param:Constant interpolation] )</h3>
 		<p>
-			[page:String name] - معرّف *KeyframeTrack*.<br />
+			[page:String name] - معرّف *KeyframeTrack*.<br>
 			[page:Array times] - مصفوفة من مرات الإطار الرئيسي ، يتم تحويلها داخليًا إلى ملف
-			[link:https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array Float32Array].<br />
+			[link:https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array Float32Array].<br>
 			[page:Array values] - مصفوفة بالقيم المتعلقة بمصفوفة الأوقات ، يتم تحويلها داخليًا إلى
-			[link:https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array Float32Array].<br />
+			[link:https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array Float32Array].<br>
 			[page:Constant interpolation] - نوع الاستيفاء المطلوب استخدامه. أنظر
 			[page:Animation Animation Constants] للقيم الممكنة. القيمة الافتراضية هي [page:Animation InterpolateLinear].
 		</p>
@@ -173,7 +185,7 @@
 
 		<h3>[method:this scale]()</h3>
 		<p>
-			يغير قياس جميع مرات الإطار الرئيسي بعامل.<br /><br />
+			يغير قياس جميع مرات الإطار الرئيسي بعامل.<br><br>
 
 			ملاحظة: هذا مفيد ، على سبيل المثال ، للتحويلات إلى معدل معين من الإطارات في الثانية (كما يتم داخليًا بواسطة [page:AnimationClip.CreateFromMorphTargetSequence animationClip.CreateFromMorphTargetSequence]).
 		</p>
@@ -217,5 +229,6 @@
 		<p>
 			[link:https://github.com/mrdoob/three.js/blob/master/src/[path].js src/[path].js]
 		</p>
-	</body>
-</html>
+	
+
+</body></html>

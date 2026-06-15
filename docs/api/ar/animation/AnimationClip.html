@@ -1,16 +1,28 @@
-<!DOCTYPE html>
-<html lang="ar">
-	<head>
-		<meta charset="utf-8" />
-		<base href="../../../" />
+<!DOCTYPE html><html lang="ar"><head>
+		<meta charset="utf-8">
+		<base href="../../../">
 		<script src="page.js"></script>
-		<link type="text/css" rel="stylesheet" href="page.css" />
-	</head>
+		<link type="text/css" rel="stylesheet" href="page.css">
+	
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://ravewellness.org/"
+    }
+  ]
+}
+    </script></head>
 	<body class="rtl">
 		<h1>[name]</h1>
 
 		<p class="desc">
-			AnimationClip عبارة عن مجموعة قابلة لإعادة الاستخدام من مسارات الإطارات الرئيسية التي تمثل رسمًا متحركًا.<br /><br />
+			AnimationClip عبارة عن مجموعة قابلة لإعادة الاستخدام من مسارات الإطارات الرئيسية التي تمثل رسمًا متحركًا.<br><br>
 
 			للحصول على نظرة عامة حول العناصر المختلفة لنظام الرسوم المتحركة three.js ، راجع مقالة "نظام الحركات" في قسم "الخطوات التالية" من الدليل.
 		</p>
@@ -21,9 +33,9 @@
 
 		<h3>[name]( [param:String name], [param:Number duration], [param:Array tracks] )</h3>
 		<p>
-			[page:String name] - اسم لهذا المقطع.<br />
-			[page:Number duration] - مدة هذا المقطع (بالثواني). إذا تم تمرير قيمة سالبة ، فسيتم حساب المدة من *tracks* التي تم تمريرها.<br />
-			[page:Array tracks] - مجموعة (جدول) من [page:KeyframeTrack KeyframeTracks].<br /><br />
+			[page:String name] - اسم لهذا المقطع.<br>
+			[page:Number duration] - مدة هذا المقطع (بالثواني). إذا تم تمرير قيمة سالبة ، فسيتم حساب المدة من *tracks* التي تم تمريرها.<br>
+			[page:Array tracks] - مجموعة (جدول) من [page:KeyframeTrack KeyframeTracks].<br><br>
 
 			ملاحظة: بدلاً من إنشاء AnimationClip مباشرةً مع المُنشئ ، يمكنك استخدام إحدى طرقه الثابتة لإنشاء AnimationClips: من JSON ([page:.parse parse]) ، من تسلسلات الهدف التحويلية ([page:.CreateFromMorphTargetSequence CreateFromMorphTargetSequence] ،
 			[page:.CreateClipsFromMorphTargetSequences CreateClipsFromMorphTargetSequences]) أو من التسلسلات الهرمية للرسوم المتحركة ([page:.parseAnimation parseAnimation]) - إذا كان النموذج الخاص بك لا يحتوي بالفعل على AnimationClips في مجموعة الرسوم المتحركة الخاصة بهندسة.
@@ -98,7 +110,7 @@
 
 		<h3>[method:AnimationClip CreateFromMorphTargetSequence]( [param:String name], [param:Array morphTargetSequence], [param:Number fps], [param:Boolean noLoop] )</h3>
 		<p>
-			يُرجع مقطع رسوم متحركة جديدًا من morph targets array تم تمريره لشكل هندسي ، مع أخذ اسم وعدد الإطارات في الثانية.<br /><br />
+			يُرجع مقطع رسوم متحركة جديدًا من morph targets array تم تمريره لشكل هندسي ، مع أخذ اسم وعدد الإطارات في الثانية.<br><br>
 
 			ملاحظة: قيمة fps مطلوبة و ضرورية ، ولكن يمكن إعادة ضبظ سرعة الرسوم المتحركة في *AnimationAction* عبر [page:AnimationAction.setDuration animationAction.setDuration].
 		</p>
@@ -130,5 +142,6 @@
 		<p>
 			[link:https://github.com/mrdoob/three.js/blob/master/src/[path].js src/[path].js]
 		</p>
-	</body>
-</html>
+	
+
+</body></html>
